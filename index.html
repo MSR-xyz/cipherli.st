@@ -54,7 +54,7 @@
       document.getElementById("lighttpdconfig").innerHTML += 'ssl.use-sslv2 = "disable"\n';
       document.getElementById("lighttpdconfig").innerHTML += 'ssl.use-sslv3 = "disable"\n';
 
-      document.getElementById("oldcrap").innerHTML = '\n<br><a onclick="location.reload(true); return false;">Give me the other settings</a>\n';
+      document.getElementById("mainContainer").innerHTML = '\n<br><a onclick="location.reload(true); return false;">Give me the other settings</a>\n';
 
     }
   </script>
@@ -145,7 +145,7 @@ ssl.ec-curve = "secp384r1"
                     <a href="https://raymii.org/s/tutorials/Strong_SSL_Security_On_lighttpd.html">Rationale and tutorial on Strong SSL Security on Lighttpd</a>
                 </div>
             </div>
-            <div class="col-md-10 col-md-offset-1" id="oldcrap">
+            <div class="col-md-10 col-md-offset-1" id="mainContainer">
                 <br >
                 <p>Do you need to (or are forced to) support old / legacy software like IE &lt; 11, Android &lt; 4.4 or Java &lt; 8? <a href="#" onclick="JavaScript:mainFn(); return false;">Yes, give me a ciphersuite that works with legacy / old software.</a></p>
             </div>
