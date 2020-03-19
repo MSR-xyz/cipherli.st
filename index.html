@@ -5,9 +5,9 @@
   <meta property="og:image" content="https://cipherli.st/img/favicon.png">
   <meta property="og:title" content="Cipherli.st - Strong ciphers for Apache, nginx and Lighttpd">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cipherli.st/">
+  <meta property="og:url" content="https://cipherlist.nnnk.dev/">
   <meta charset="utf-8">
-  <title>Cipherli.st - Strong Ciphers for Apache, nginx and Lighttpd</title>
+  <title>Cipherli.st - Strong Ciphers for Apache, nginx, Lighttpd and more.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cipherli.st - Strong ciphers for Apache, nginx and Lighttpd">
   <meta name="author" content="Remy van Elst">
@@ -18,7 +18,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript" language="javascript">
-    function oldCrap() {
+    function mainFn() {
       document.getElementById("apacheconfig").innerHTML = 'SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:ECDHE-RSA-AES128-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA128:DHE-RSA-AES128-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA128:ECDHE-RSA-AES128-SHA384:ECDHE-RSA-AES128-SHA128:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA384:AES128-GCM-SHA128:AES128-SHA128:AES128-SHA128:AES128-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4 \n';
       document.getElementById("apacheconfig").innerHTML += 'SSLProtocol All -SSLv2 -SSLv3\n';
       document.getElementById("apacheconfig").innerHTML += 'SSLHonorCipherOrder On\n';
@@ -147,10 +147,10 @@ ssl.ec-curve = "secp384r1"
             </div>
             <div class="col-md-10 col-md-offset-1" id="oldcrap">
                 <br >
-                <p>Do you need to (or are forced to) support old / legacy software like IE &lt; 11, Android &lt; 4.4 or Java &lt; 8? <a href="#" onclick="JavaScript:oldCrap(); return false;">Yes, give me a ciphersuite that works with legacy / old software.</a></p>
+                <p>Do you need to (or are forced to) support old / legacy software like IE &lt; 11, Android &lt; 4.4 or Java &lt; 8? <a href="#" onclick="JavaScript:mainFn(); return false;">Yes, give me a ciphersuite that works with legacy / old software.</a></p>
             </div>
             <div class="col-md-10 col-md-offset-1">
-              <p><a href="https://ssldecoder.org/"><h3>Test your SSL config</h3></a>.</p>
+              <p><a href="https://www.ssllabs.com/ssltest"><h3>Test your SSL config</h3></a>.</p>
         <h2>Warning</h2>
         These examples are meant for sysadmins who have done this before (and sysadmins are forced to support Windows XP with IE &lt; 9, therefore des3cbc), as an easily copy-pastable example, not for newbies who have no idea what all this means. The settings are very secure, but if you don't know what you are doing might make your website and subdomains <strong>unavailable for a long, long time</strong> (see <a href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a>). Research what you are doing and think before you act.<br />
         <strong>Other suggestions</strong>
